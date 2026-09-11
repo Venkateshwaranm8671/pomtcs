@@ -40,6 +40,7 @@ export default class RegisterPage extends ScreenshotUtil {
     }
 
     async subscribeBtn() {
+        await this.takeScreenshot("subscribe-page.png")
         const subscribeCheckbox = this.page.locator(registerLocator.subscribeButton).isChecked();
         // await subscribeCheckbox.scrollIntoViewIfNeeded();
         // await subscribeCheckbox.check({ force: true });
