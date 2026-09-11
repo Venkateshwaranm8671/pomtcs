@@ -1,0 +1,11 @@
+{
+
+    "firstName" :"Vicky",
+    "lastName" :"Kumar",
+    "email" : "Viiopen${Math.floor(Math.random() * 1000)}@gmail.com",
+    "password" :"masterd123",
+    "mobileNumber" : "9876543210"
+
+    
+}
+

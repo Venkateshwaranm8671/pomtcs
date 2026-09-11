@@ -1,0 +1,255 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Projects\\pomtcs\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Projects\\pomtcs\\playwright.config.ts",
+    "rootDir": "C:/Projects/pomtcs/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/temp/pw-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Projects/pomtcs/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonreport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "register.test.ts",
+      "file": "register.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pom automation",
+          "file": "register.test.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC01 Register",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30614,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Projects\\pomtcs\\pages\\resgisterPage.ts",
+                            "column": 23,
+                            "line": 56
+                          },
+                          "message": "Error: page.waitForNavigation: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"networkidle\"\n============================================================\n\n\u001b[90m   at \u001b[39m..\\pages\\resgisterPage.ts:56\n\n\u001b[0m \u001b[90m 54 |\u001b[39m\n \u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m             \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForNavigation({waitUntil\u001b[33m:\u001b[39m \u001b[32m\"networkidle\"\u001b[39m})\u001b[33m,\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m             \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(registerLocator\u001b[33m.\u001b[39mcontinueButton)\n \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m                   ])\u001b[0m\n\u001b[2m    at RegisterPage.continueBtn (C:\\Projects\\pomtcs\\pages\\resgisterPage.ts:56:23)\u001b[22m\n\u001b[2m    at C:\\Projects\\pomtcs\\tests\\register.test.ts:35:18\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-11T10:01:40.553Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\temp\\pw-results\\register-Pom-automation-TC01-Register-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\temp\\pw-results\\register-Pom-automation-TC01-Register-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\temp\\pw-results\\register-Pom-automation-TC01-Register-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2392ac93de9d13332a58-35fb287fc5fd7a2c9aaf",
+              "file": "register.test.ts",
+              "line": 18,
+              "column": 5
+            },
+            {
+              "title": "Tc02 Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "interrupted",
+                      "duration": 3548,
+                      "error": {
+                        "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/login\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/login\", waiting until \"load\"\u001b[22m\n\n    at C:\\Projects\\pomtcs\\tests\\register.test.ts:43:14",
+                        "location": {
+                          "file": "C:\\Projects\\pomtcs\\tests\\register.test.ts",
+                          "column": 14,
+                          "line": 43
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m loginPage(page)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}route=account/login`\u001b[39m)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39menterMail(data\u001b[33m.\u001b[39memail)\n \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39menterPassword(data\u001b[33m.\u001b[39mpassword)\n \u001b[90m 46 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mclickLoginBtn()\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Projects\\pomtcs\\tests\\register.test.ts",
+                            "column": 14,
+                            "line": 43
+                          },
+                          "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m   \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m loginPage(page)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}route=account/login`\u001b[39m)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39menterMail(data\u001b[33m.\u001b[39memail)\n \u001b[90m 45 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39menterPassword(data\u001b[33m.\u001b[39mpassword)\n \u001b[90m 46 |\u001b[39m   \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mclickLoginBtn()\u001b[0m\n\u001b[2m    at C:\\Projects\\pomtcs\\tests\\register.test.ts:43:14\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-11T10:02:14.900Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\temp\\pw-results\\register-Pom-automation-Tc02-Login-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\temp\\pw-results\\register-Pom-automation-Tc02-Login-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Projects\\pomtcs\\tests\\register.test.ts",
+                        "column": 14,
+                        "line": 43
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2392ac93de9d13332a58-b35fae6972a918907697",
+              "file": "register.test.ts",
+              "line": 40,
+              "column": 5
+            },
+            {
+              "title": "TC03 HomePage",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2392ac93de9d13332a58-77461c418266c5a7ab61",
+              "file": "register.test.ts",
+              "line": 50,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-11T10:01:38.874Z",
+    "duration": 40476.526999999995,
+    "expected": 0,
+    "skipped": 2,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
