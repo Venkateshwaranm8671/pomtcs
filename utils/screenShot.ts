@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 
-export class ScreenShotUtil{
+export class ScreenshotUtil{
 
    constructor(public page:Page){}
 

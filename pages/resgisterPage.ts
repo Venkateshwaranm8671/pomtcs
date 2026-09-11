@@ -1,10 +1,10 @@
 import { Page } from "@playwright/test";
 
 import RegisterLocator from "../locators/registerLocator";
-import { ScreenShotUtil } from "../utils/screenshot";
+import { ScreenshotUtil } from "../utils/screenShot";
 
 const registerLocator = new RegisterLocator()
-export default class RegisterPage extends ScreenShotUtil {
+export default class RegisterPage extends ScreenshotUtil {
     
 
     //constructor(public page: Page) {}
@@ -31,6 +31,7 @@ export default class RegisterPage extends ScreenShotUtil {
     }
 
     async enterPassword(password: string) {
+        await this.takeScreenshot("password-page.png")
         await this.page.locator(registerLocator.password).fill(password);
     }
 
